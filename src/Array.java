@@ -20,5 +20,7 @@ public class Array {
         System.out.println(ContainElement(newArr));
         System.out.println("Size of ArrayList "+newArr.size());
         System.out.println("Is our ArrayList is Empty? "+newArr.isEmpty());
+        newArr.remove(5);
+        System.out.println("Removing index at 5 "+newArr);
     }
 }
