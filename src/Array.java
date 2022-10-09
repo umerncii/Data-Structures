@@ -1,7 +1,6 @@
 import sun.font.TrueTypeFont;
 
 import java.util.ArrayList;
-import java.util.List;
 public class Array {
     public static ArrayList<Integer> ContainElement(ArrayList<Integer> newArr){
         if(newArr.contains(11)){
@@ -21,6 +20,15 @@ public class Array {
         }
     return maxValue;
     }
+    public static int getMin(int[] newArr){
+        int minValue =  newArr[0];
+        for (int i=0; i < newArr.length; i++ ){
+            if (newArr[i] < minValue){
+                minValue = newArr[i];
+            }
+        }
+        return minValue;
+    }
     public static void main(String[] args) {
         ArrayList<Integer> newArr = new ArrayList<Integer>();
         for (int i=1; i<=10; i++){
@@ -35,5 +43,6 @@ public class Array {
         System.out.println("Adding new element in array "+newArr.add(12));
         int[] arr = newArr.stream().mapToInt(Integer::intValue).toArray();//convert an ArrayList containing Integers to primitive int array
         System.out.println("Max value in our ArrayList "+getMax(arr));
+        System.out.println("Min value in our ArrayList "+getMin(arr));
     }
 }
