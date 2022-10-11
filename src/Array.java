@@ -12,7 +12,6 @@ public class Array {
         }
         return newArr;
     }
-
     public static int getMax(int[] newArr) {
         int maxValue = newArr[0];
         for (int i = 0; i < newArr.length; i++) {
@@ -22,7 +21,6 @@ public class Array {
         }
         return maxValue;
     }
-
     public static int getMin(int[] newArr) {
         int minValue = newArr[0];
         for (int i = 0; i < newArr.length; i++) {
@@ -59,6 +57,5 @@ public class Array {
         System.out.println("Total size of an ArrayList "+ newArr.size());
         System.out.println("Descending order ArrayList "+ DescendingOrder(newArr));
         System.out.println("Ascending order ArrayList "+AscendingOrder(newArr));
-
     }
 }
