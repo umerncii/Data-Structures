@@ -31,7 +31,7 @@ public class Array {
         return minValue;
     }
     public static ArrayList<Integer> DescendingOrder(ArrayList<Integer> newArr){
-        Collections.sort(newArr, Collections.reverseOrder());
+        newArr.sort(Collections.reverseOrder());
         return newArr;
     }
     public static ArrayList<Integer> AscendingOrder(ArrayList<Integer> newArr){
